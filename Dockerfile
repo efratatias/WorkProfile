@@ -8,7 +8,6 @@ COPY src/app.py src/dbcontext.py src/person.py ./src/
 COPY src/static/ static/
 COPY src/templates/ templates/
 COPY src/init.sql src/
-COPY src/app.py src/dbcontext.py src/person.py ./src/
 
 FROM python:3.9-alpine
 WORKDIR /app
