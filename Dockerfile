@@ -4,8 +4,6 @@ WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY static/ static/
-COPY templates/ templates/
 COPY src/app.py src/dbcontext.py src/person.py ./src/
 COPY src/static/ static/
 COPY src/templates/ templates/
